@@ -120,7 +120,20 @@ console.log(answer7)
 
 // Greater than Y - Given value of Y, write a function that takes an array and returns the number of values that are greater than Y. For example if arr = [1, 3, 5, 7] and Y = 3, your function will return 2. (There are two values in the array greater than 3, which are 5, 7).
 
+function greaterthany(array){
+    var Y = 3
+    newarray = []
+    for (var x=0; x < array.length; x++){
+        if (array[x] > Y) {
+            newarray.push([array[x]])
+        }
 
+    }
+    return newarray;
+}
+
+var answer8ish = greaterthany([1, 3, 5, 7])
+console.log("Greater than Y:" + answer8ish)
 
 
 // Squares - Given an array with multiple values, write a function that replaces each value in the array with the value squared by itself. (e.g. [1,5,10,-2] will become [1,25,100,4])
@@ -174,11 +187,6 @@ function theonearray(array){
 var answerminmax = theonearray([1,5,10,-2])
 console.log(answerminmax)
 
-// var z = 0;
-// for (var x=0; x < w.length; x++){
-//     z = w[x] + z;
-// }
-// return (z / w.length);
 
 // Swap Values - Write a function that will swap the first and last values of any given array. The default minimum length of the array is 2. (e.g. [1,5,10,-2] will become [-2,5,10,1]).
 
